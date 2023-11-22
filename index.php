@@ -1,1 +1,1 @@
-<?php echo 'Test file is working'; ?>
+<?php echo 'Test file is working';
