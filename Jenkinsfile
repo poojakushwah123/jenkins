@@ -19,7 +19,7 @@ pipeline {
         }  
         stage('Code Quality Check') {
             steps {
-                sh 'phpcs --standard=PSR2 index.php'
+                sh 'phpcs --standard=PSR2 /index.php'
             }
         }
         // Other stages in your pipeline
