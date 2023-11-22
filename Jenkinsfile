@@ -16,6 +16,13 @@ pipeline {
             steps {
                 echo 'Deploying....'
             }
-        }        
+        }  
+        stage('Code Quality Check') {
+            steps {
+                sh 'phpcs --standard=Drupal index.php'
+            }
+        }
+        // Other stages in your pipeline
+
     }
 }
