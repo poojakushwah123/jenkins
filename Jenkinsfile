@@ -5,6 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                sh 'composer create-project drupal/recommended-project'
             }
         }
         stage('Test') {
